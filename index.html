@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joya Sabry | IT Student & Data Scientist Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- Background decorative glow gradients -->
+  <div class="fixed top-0 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 right-1/4 w-[450px] h-[450px] bg-emerald-500/10 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+
+  <!-- Sticky Header / Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3.5 group">
+        <div class="relative w-11 h-11 rounded-full p-[2px] bg-gradient-to-tr from-blue-500 to-emerald-400 shadow-lg shadow-blue-500/25 shrink-0 group-hover:scale-105 transition-all duration-300">
+          <img src="joye image.jpeg" alt="Joya Sabry" class="w-full h-full object-cover object-top rounded-full">
+        </div>
+        <div>
+          <span class="font-bold text-lg text-white group-hover:text-blue-400 transition-colors">Joya Sabry</span>
+          <span class="text-xs text-slate-400 block -mt-1 font-mono-code">Data Science & IT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+        <a href="#education" class="hover:text-blue-400 transition-colors">Education & Certs</a>
+        <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#contact" class="py-2.5 px-5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/25 flex items-center gap-2">
+          <span>Get in Touch</span>
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white text-xl p-2 focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 flex flex-col gap-4 text-slate-300 font-medium text-sm">
+      <a href="#about" class="mobile-link hover:text-blue-400 py-1">About</a>
+      <a href="#skills" class="mobile-link hover:text-blue-400 py-1">Skills</a>
+      <a href="#projects" class="mobile-link hover:text-blue-400 py-1">Projects</a>
+      <a href="#education" class="mobile-link hover:text-blue-400 py-1">Education & Certs</a>
+      <a href="#contact" class="mobile-link hover:text-blue-400 py-1">Contact</a>
+      <a href="#contact" class="mobile-link py-2.5 px-4 rounded-xl bg-blue-600 text-white text-center font-semibold">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="pt-32 pb-20 md:pt-44 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative overflow-hidden">
+    <!-- Soft portrait backdrop glow behind name (top left) -->
+    <div class="absolute top-12 left-0 w-80 h-80 opacity-20 blur-3xl pointer-events-none -z-10 overflow-hidden rounded-full">
+      <img src="joye image.jpeg" alt="" class="w-full h-full object-cover">
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Main Intro Column -->
+      <div class="lg:col-span-7">
+        
+        <!-- Profile Avatar + Greeting Header -->
+        <div class="flex items-center gap-4 mb-6">
+          <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-emerald-400 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <img src="joye image.jpeg" alt="Joya Sabry" class="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-2 border-blue-400/80 shadow-2xl shrink-0">
+          </div>
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>B.Sc. IT & Data Science Student</span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-300">
+              Hi, I'm <span class="text-gradient">Joya Sabry</span> 
+            </h2>
+          </div>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
+          Transforming Raw Data Into <span class="text-gradient">Actionable AI Insights</span>
+        </h1>
+
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
+          Hi, I'm <strong class="text-white">Joya Sabry</strong> — an IT student specializing in Data Science at Egyptian E-Learning University. Passionate about machine learning, predictive analytics, natural language processing, and data visualization.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-4 mb-10">
+          <a href="#projects" class="py-3.5 px-7 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-xl shadow-blue-600/30 flex items-center gap-2.5">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Explore Projects</span>
+          </a>
+          <a href="#contact" class="py-3.5 px-7 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white font-semibold text-sm border border-slate-700 transition-all flex items-center gap-2.5">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact Me</span>
+          </a>
+          <a href="mailto:joyasabryjoyasabryashake@gmail.com" class="py-3.5 px-5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-blue-400 text-sm border border-slate-800 transition-all flex items-center gap-2" title="Email Joya">
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+
+        <!-- Contact Quick Badges -->
+        <div class="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs text-slate-400">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-location-dot text-emerald-400"></i>
+            <span>Egypt</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-blue-400"></i>
+            <span>01068889283</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-indigo-400"></i>
+            <span>joyasabryjoyasabryashake@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Highlight Card Column -->
+      <div class="lg:col-span-5">
+        <div class="glass-card rounded-3xl p-8 border border-slate-800 relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl"></div>
+          
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-xs font-mono-code text-blue-400 uppercase tracking-wider">Academic Overview</span>
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">
+              GPA: 3.67
+            </span>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <div class="text-xs text-slate-400 mb-1">University & Faculty</div>
+              <div class="text-white font-bold text-base">Egyptian E-Learning University (EELU)</div>
+              <div class="text-slate-400 text-xs mt-0.5">Faculty of Computers & Information</div>
+            </div>
+
+            <div>
+              <div class="text-xs text-slate-400 mb-1">Major Specialization</div>
+              <div class="text-blue-400 font-semibold text-sm flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>IT – Data Science (2023 – 2027)</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800/80">
+              <div class="bg-slate-900/80 rounded-xl p-3 border border-slate-800">
+                <div class="text-2xl font-extrabold text-white">5+</div>
+                <div class="text-xs text-slate-400">Core ML & AI Projects</div>
+              </div>
+              <div class="bg-slate-900/80 rounded-xl p-3 border border-slate-800">
+                <div class="text-2xl font-extrabold text-emerald-400">2027</div>
+                <div class="text-xs text-slate-400">Expected Graduation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-slate-800 relative">
+      <div class="max-w-3xl">
+        <h2 class="text-xs font-mono-code text-blue-400 uppercase tracking-widest mb-3">About Me</h2>
+        <h3 class="text-3xl font-extrabold text-white mb-6">Passionate Data Science Practitioner</h3>
+        
+        <p class="text-slate-300 text-base leading-relaxed mb-6">
+          I am an IT student specializing in Data Science with a solid foundation in Python, SQL, machine learning, data analysis, and data visualization. I take pride in building data-driven pipelines using industry-standard libraries including Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, and Power BI.
+        </p>
+
+        <p class="text-slate-300 text-base leading-relaxed mb-8">
+          Driven by curiosity, I focus on transforming raw, complex data into practical insights and high-performance AI solutions. My experience spans predictive classification pipelines, natural language processing, dimensionality reduction, and object-oriented software design.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="w-9 h-9 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-sm">Machine Learning</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Classification pipelines, decision trees, random forests & SMOTE resampling.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-font"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-sm">NLP & Text Analytics</h4>
+              <p class="text-xs text-slate-400 mt-0.5">TF-IDF vectorization, NLTK tokenization, and spam detection systems.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="w-9 h-9 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-sm">Dimensionality Reduction</h4>
+              <p class="text-xs text-slate-400 mt-0.5">PCA, LDA, covariance analysis, and SelectKBest feature selection.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-white text-sm">Data Visualization</h4>
+              <p class="text-xs text-slate-400 mt-0.5">Interactive dashboards & visual reports using Seaborn, Matplotlib & Power BI.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-xs font-mono-code text-blue-400 uppercase tracking-widest mb-3">Technical Expertise</h2>
+      <h3 class="text-3xl font-extrabold text-white">Skills & Toolkit</h3>
+      <p class="text-slate-400 text-sm mt-2">Comprehensive stack of data science tools, algorithms, languages, and core software engineering concepts.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Category 1: ML & Analysis -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 text-lg">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <h4 class="font-bold text-white text-base mb-3">Data Analysis & ML</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Python</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Pandas</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">NumPy</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Scikit-learn</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Decision Trees</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Random Forest</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">SMOTENC</span>
+        </div>
+      </div>
+
+      <!-- Category 2: Visualization -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 text-lg">
+          <i class="fa-solid fa-chart-column"></i>
+        </div>
+        <h4 class="font-bold text-white text-base mb-3">Data Visualization</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Matplotlib</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Seaborn</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Power BI</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Data Storytelling</span>
+        </div>
+      </div>
+
+      <!-- Category 3: NLP & Stats -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 text-lg">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+        <h4 class="font-bold text-white text-base mb-3">NLP & Dimensionality</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">TF-IDF</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">NLTK</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">PCA</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">LDA</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">SelectKBest</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Covariance Analysis</span>
+        </div>
+      </div>
+
+      <!-- Category 4: Programming & SQL -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 text-lg">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h4 class="font-bold text-white text-base mb-3">Languages & SQL</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Python</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">SQL</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">Java</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">C#</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">C/C++</span>
+          <span class="skill-tag text-xs px-2.5 py-1 rounded-md">HTML/CSS</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional Tools & Soft Skills Bar -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 flex items-center justify-between">
+        <div>
+          <span class="text-xs font-mono-code text-slate-400 uppercase">Developer Tools</span>
+          <div class="flex items-center gap-3 mt-2">
+            <span class="text-sm font-semibold text-slate-200"><i class="fa-solid fa-terminal text-blue-400 mr-2"></i>Jupyter Notebook</span>
+            <span class="text-slate-600">•</span>
+            <span class="text-sm font-semibold text-slate-200"><i class="fa-solid fa-cloud text-emerald-400 mr-2"></i>Google Colab</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 flex items-center justify-between">
+        <div>
+          <span class="text-xs font-mono-code text-slate-400 uppercase">Professional Skills</span>
+          <div class="flex items-center gap-3 mt-2">
+            <span class="text-sm font-semibold text-slate-200"><i class="fa-solid fa-users text-purple-400 mr-2"></i>Teamwork & Collaboration</span>
+            <span class="text-slate-600">•</span>
+            <span class="text-sm font-semibold text-slate-200"><i class="fa-solid fa-lightbulb text-amber-400 mr-2"></i>Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+      <div>
+        <h2 class="text-xs font-mono-code text-blue-400 uppercase tracking-widest mb-3">Portfolio Highlights</h2>
+        <h3 class="text-3xl font-extrabold text-white">Featured Projects</h3>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-2">
+        <button data-filter="all" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 text-white shadow-lg shadow-blue-500/20 transition-all">
+          All Projects
+        </button>
+        <button data-filter="ml" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800/60 text-slate-400 hover:text-white transition-all">
+          Machine Learning
+        </button>
+        <button data-filter="nlp" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800/60 text-slate-400 hover:text-white transition-all">
+          NLP
+        </button>
+        <button data-filter="ai" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800/60 text-slate-400 hover:text-white transition-all">
+          Software & AI
+        </button>
+      </div>
+    </div>
+
+    <!-- Projects Grid Container -->
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Populated via script.js -->
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section id="education" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-xs font-mono-code text-blue-400 uppercase tracking-widest mb-3">Background & Credentials</h2>
+      <h3 class="text-3xl font-extrabold text-white">Education & Certifications</h3>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- Education Card -->
+      <div class="glass-card rounded-2xl p-7 border border-slate-800 lg:col-span-1 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 border border-blue-500/20">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="text-xs font-mono-code text-blue-400">2023 – 2027</span>
+          <h4 class="text-xl font-bold text-white mt-1 mb-2">Bachelor of Science</h4>
+          <p class="text-slate-300 text-sm font-semibold">Faculty of Computers & Information</p>
+          <p class="text-slate-400 text-xs mt-1">Egyptian E-Learning University (EELU)</p>
+
+          <div class="mt-6 pt-6 border-t border-slate-800/80">
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="text-slate-400">Specialization</span>
+              <span class="text-blue-400 font-bold">IT – Data Science</span>
+            </div>
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-400">Academic Standing</span>
+              <span class="text-emerald-400 font-bold">GPA: 3.67</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Column -->
+      <div class="lg:col-span-2 space-y-6">
+        
+        <!-- CCNA -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 flex items-start gap-5">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl shrink-0 border border-emerald-500/20">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-3">
+              <h4 class="text-lg font-bold text-white">CCNA Certification</h4>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium">Networking</span>
+            </div>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Comprehensive training covering networking fundamentals, TCP/IP architecture, routing and switching protocols, IP addressing subnetting, and network security mechanisms.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITI C# -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 flex items-start gap-5">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0 border border-purple-500/20">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-3">
+              <h4 class="text-lg font-bold text-white">ITI – C# Training</h4>
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 font-medium">Software Training</span>
+            </div>
+            <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+              Practical training focused on C# programming fundamentals, Object-Oriented Programming (OOP) paradigms, memory management, and software development standards.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Socials Section -->
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Contact Info -->
+      <div class="lg:col-span-5">
+        <h2 class="text-xs font-mono-code text-blue-400 uppercase tracking-widest mb-3">Get In Touch</h2>
+        <h3 class="text-3xl font-extrabold text-white mb-6">Let's Connect & Collaborate</h3>
+        <p class="text-slate-300 text-sm leading-relaxed mb-8">
+          I'm actively seeking opportunities in Data Science, Machine Learning, and Data Analytics. Feel free to reach out for project inquiries or technical discussions.
+        </p>
+
+        <div class="space-y-4">
+          <!-- Email -->
+          <a href="mailto:joyasabryjoyasabryashake@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/40 transition group">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">Email Address</div>
+              <div class="text-sm font-semibold text-white group-hover:text-blue-400 transition">joyasabryjoyasabryashake@gmail.com</div>
+            </div>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:01068889283" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/40 transition group">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">Phone / WhatsApp</div>
+              <div class="text-sm font-semibold text-white group-hover:text-emerald-400 transition">01068889283</div>
+            </div>
+          </a>
+
+          <!-- Location -->
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">Location</div>
+              <div class="text-sm font-semibold text-white">Egypt</div>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/joyasabry" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-400/40 transition group">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/10 text-blue-400 flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">LinkedIn Profile</div>
+              <div class="text-sm font-semibold text-white group-hover:text-blue-400 transition">Connect on LinkedIn</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Contact Form -->
+      <div class="lg:col-span-7">
+        <div class="glass-card rounded-3xl p-8 border border-slate-800 relative">
+          
+          <h4 class="text-xl font-bold text-white mb-6">Send Me a Message</h4>
+
+          <form id="contact-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name</label>
+                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Email</label>
+                <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Subject</label>
+              <input type="text" required placeholder="Data Science Collaboration Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Message</label>
+              <textarea rows="4" required placeholder="Write your message here..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+            </button>
+          </form>
+
+          <!-- Success Toast -->
+          <div id="contact-toast" class="hidden absolute inset-0 bg-slate-950/90 backdrop-blur-md rounded-3xl p-8 flex-col items-center justify-center text-center modal-animate">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mb-4">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-2">Message Sent Successfully!</h4>
+            <p class="text-slate-300 text-sm">Thank you for reaching out. Joya will get back to you soon.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div>
+        © 2026 <strong class="text-slate-200">Joya Sabry</strong>. All rights reserved.
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#hero" class="hover:text-blue-400 transition">Back to Top <i class="fa-solid fa-arrow-up text-[10px] ml-1"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Project Details Modal -->
+  <div id="project-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md p-4 sm:p-6 overflow-y-auto items-center justify-center">
+    <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 sm:p-8 border border-slate-700/80 relative modal-animate my-8">
+      
+      <!-- Close button -->
+      <button id="close-modal-btn" class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <!-- Dynamic Content Container -->
+      <div id="modal-body-content">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
